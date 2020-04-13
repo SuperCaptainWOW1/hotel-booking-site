@@ -1,0 +1,35 @@
+@import './variables';
+@import './responsive';
+@import './fonts';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  color: $c-dark;
+  line-height: 3rem;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-family: 'Open Sans';
+}
+
+h2 {
+  font-size: 1.9rem;
+  font-family: 'Open Sans';
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-family: 'Montserrat';
+}
+
+.body {
+  font-size: 1.4rem;
+  color: rgba($c-dark, 0.75);
+}

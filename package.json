@@ -7,9 +7,9 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "clean": "rm dist/bundle.js",
+    "clean": "rm -R dist/",
     "start": "parcel src/index.pug -p 8080",
-    "build-prod": "parcel build src/index.pug"
+    "build": "parcel build src/index.pug"
   },
   "dependencies": {},
   "devDependencies": {
