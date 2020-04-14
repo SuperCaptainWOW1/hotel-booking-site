@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+html {
+  // Montserrat set by default - most used in project
+  font-family: 'Montserrat', 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
 h1, h2, h3 {
   color: $c-dark;
   line-height: 3rem;
@@ -26,10 +31,33 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
-  font-family: 'Montserrat';
 }
 
 .body {
   font-size: 1.4rem;
   color: rgba($c-dark, 0.75);
+}
+
+button.btn {
+  border-radius: 2.2rem;
+  padding: 0.9rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  height: 3.4rem;
+  font-weight: 700;
+  &.btn_primary {
+    background: $g-primary;
+    color: #fff;
+  }
+  &.btn_primary_alt {
+    position: relative;
+    background-color: transparent;
+    border: double 2px transparent;
+    border-radius: 2.2rem;
+    background-image: linear-gradient(white, white), 
+                      $g-primary;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    color: $c-primary;
+  }
 }
