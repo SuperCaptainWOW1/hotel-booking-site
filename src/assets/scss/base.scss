@@ -3,6 +3,7 @@
 @import 'fonts';
 
 @import  '../css/header.css';
+@import  '../css/footer.css';
 
 * {
   padding: 0;
@@ -12,6 +13,10 @@
 
 html {
   font-family: 'Montserrat', 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
 }
 
 h1, h2, h3 {
@@ -37,6 +42,14 @@ h3 {
 .body {
   font-size: 1.4rem;
   color: rgba($c-dark, 0.75);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 button.btn {

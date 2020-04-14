@@ -1,0 +1,50 @@
+@import "../assets/scss/variables";
+
+footer {
+  .footer__main {
+    border-top: 1px solid #D1D1D4;
+    border-bottom: 1px solid #D1D1D4;
+    .container {
+     display: flex;
+     justify-content: space-between;
+     padding: 10rem 0;
+     .footer__element {
+       max-width: 26rem;
+       p {
+         line-height: 2.4rem;
+       }
+       p, li, input {
+         margin-top: 2rem;
+       }
+       p:first-child,
+       input:first-child {
+         margin-top: 0;
+       }
+       h3 {
+         text-transform: uppercase;
+       }
+       .footer__element-menu {
+         list-style: none;
+         li {
+           color: rgba($c-dark, $alpha: 0.5);
+           font-size: 1.4rem;
+         }
+       }
+     }
+   }
+  }
+
+  .footer__secondary .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.6rem 0;
+    ul.socials {
+      display: flex;
+      list-style: none;
+      li a {
+        padding-left: 2rem;
+      }
+    }
+  }
+}
