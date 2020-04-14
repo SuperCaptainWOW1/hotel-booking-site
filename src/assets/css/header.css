@@ -1,0 +1,13 @@
+/* line 1, ../../components/header.scss */
+header .container {
+  display: flex;
+}
+/* line 3, ../../components/header.scss */
+header .container nav {
+  display: block;
+}
+/* line 5, ../../components/header.scss */
+header .container nav ul.header__top-menu {
+  display: flex;
+  list-style: none;
+}

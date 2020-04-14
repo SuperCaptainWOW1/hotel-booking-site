@@ -1,5 +1,17 @@
 header
-
+  .container
+    img.logo(src="./assets/img/logo.svg", alt="Toxin")
+    nav
+      ul.header__top-menu
+        li О нас
+        li Услуги 
+          img.arrow-down(src="./assets/img/arrow-down.svg", alt="open")
+        li Вакансии
+        li Новости
+        li Соглашения 
+          img.arrow-down(src="./assets/img/arrow-down.svg", alt="open")
+      button.btn.btn_primary_alt(type='button') Войти
+      button.btn.btn_primary(type='button') Зарегистрирооваться
 
 style
   include ../assets/css/header.css
