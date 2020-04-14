@@ -1,13 +1,50 @@
-/* line 1, ../../components/header.scss */
+/* line 3, ../../components/header.scss */
+header {
+  background-color: #fff;
+  padding: 1.5rem 0;
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+  color: rgba(31, 32, 65, 0.5);
+  font-size: 1.4rem;
+}
+/* line 9, ../../components/header.scss */
 header .container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-/* line 3, ../../components/header.scss */
+/* line 13, ../../components/header.scss */
 header .container nav {
-  display: block;
+  display: flex;
+  align-items: center;
 }
-/* line 5, ../../components/header.scss */
+/* line 16, ../../components/header.scss */
 header .container nav ul.header__top-menu {
   display: flex;
+  align-items: center;
   list-style: none;
+}
+/* line 20, ../../components/header.scss */
+header .container nav ul.header__top-menu li {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+/* line 26, ../../components/header.scss */
+header .container nav ul.header__top-menu .arrow-down {
+  stroke: rgba(31, 32, 65, 0.5);
+}
+/* line 30, ../../components/header.scss */
+header .container nav .btn_primary_alt {
+  margin: 0 2rem;
+}
+/* line 33, ../../components/header.scss */
+header .container nav .header__username {
+  border-left: 1px solid rgba(31, 32, 65, 0.1);
+  padding-left: 3rem;
+  margin-left: 3rem;
+  position: relative;
+  height: 3rem;
+  display: flex;
+  align-items: center;
 }

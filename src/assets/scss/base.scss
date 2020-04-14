@@ -1,6 +1,8 @@
-@import './variables';
-@import './responsive';
-@import './fonts';
+@import 'variables';
+@import 'responsive';
+@import 'fonts';
+
+@import  '../css/header.css';
 
 * {
   padding: 0;
@@ -9,7 +11,6 @@
 }
 
 html {
-  // Montserrat set by default - most used in project
   font-family: 'Montserrat', 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
@@ -45,6 +46,10 @@ button.btn {
   border: none;
   height: 3.4rem;
   font-weight: 700;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.5;
+  }
   &.btn_primary {
     background: $g-primary;
     color: #fff;

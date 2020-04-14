@@ -1,3 +1,10 @@
+mixin isAuthorised(status)
+  if status
+    p.header__username Cosmin Negoita
+  else 
+    button.btn.btn_primary_alt(type='button') Войти
+    button.btn.btn_primary(type='button') Зарегистрироваться
+
 header
   .container
     img.logo(src="./assets/img/logo.svg", alt="Toxin")
@@ -10,8 +17,5 @@ header
         li Новости
         li Соглашения 
           img.arrow-down(src="./assets/img/arrow-down.svg", alt="open")
-      button.btn.btn_primary_alt(type='button') Войти
-      button.btn.btn_primary(type='button') Зарегистрирооваться
-
-style
-  include ../assets/css/header.css
+      +isAuthorised(false)
+        

@@ -10,14 +10,13 @@
   html {
     font-size: 6px
   }
-
+  .container {
+    width: 90%;
+  }
 }
 @media (min-width: 768px) {
   html {
     font-size: 7px
-  }
-  .container {
-    width: 90%;
   }
 }
 @media (min-width: 992px) {
@@ -32,4 +31,8 @@
   .container {
     width: 80%;
   }
+}
+
+.container {
+  margin: 0 auto;
 }
