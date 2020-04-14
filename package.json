@@ -8,7 +8,9 @@
   "license": "ISC",
   "scripts": {
     "clean": "rm -R dist/",
-    "start": "parcel src/index.pug -p 8080",
+    "compile": "compass compile",
+    "watch:parcel": "parcel ./src/index.pug -p 8080",
+    "start": "npm run compile && npm run watch:parcel",
     "build": "parcel build src/index.pug"
   },
   "dependencies": {},

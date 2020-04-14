@@ -1,0 +1,10 @@
+header .container {
+  display: flex;
+  nav {
+    display: block;
+    ul.header__top-menu {
+      display: flex;
+      list-style: none;
+    }
+  }
+}
