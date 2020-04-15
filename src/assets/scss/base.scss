@@ -2,8 +2,9 @@
 @import 'responsive';
 @import 'fonts';
 
-@import  '../css/header.css';
-@import  '../css/footer.css';
+@import  '../../components/header.scss';
+@import  '../../components/footer.scss';
+@import  '../../components/base-input.scss';
 
 * {
   padding: 0;

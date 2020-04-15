@@ -8,14 +8,10 @@
   "license": "ISC",
   "scripts": {
     "clean": "rm -R dist/",
-    "watch:scss": "compass watch",
-    "watch:parcel": "parcel ./src/index.pug -p 8080",
-    "start": "concurrently \"npm run watch:scss\" \"npm run watch:parcel\"",
+    "start": "parcel ./src/index.pug -p 8080",
     "build": "parcel build src/index.pug"
   },
-  "dependencies": {
-    "concurrently": "^5.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
